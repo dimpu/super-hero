@@ -1,0 +1,12 @@
+<div class="search-bar" [ngClass]="{'search-bar--open': open}" role="search">
+  <form class="search-form" [formGroup]="form" (ngSubmit)="submit()" novalidate>
+    <input
+      autocomplete="off"
+      class="search-form__input"
+      formControlName="search"
+      maxlength="60"
+      placeholder="Search Tracks"
+      required
+      type="text">
+  </form>
+</div>
